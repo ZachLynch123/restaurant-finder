@@ -7,12 +7,17 @@ html{
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #43c6ac; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #43c6ac, #191654); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #43c6ac, #191654);
+  background-image: #43c6ac; /* fallback for old browsers */
+  background-image: -webkit-linear-gradient(to top, #43c6ac, #191654); /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to top, #43c6ac, #191654);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   
+}
+
+body {
+  background: red;
 }
 
 code {
