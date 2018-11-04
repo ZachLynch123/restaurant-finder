@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Restaurant from './Restaurant';
-import * as strap from 'reactstrap';
 import { Col } from 'reactstrap';
 
 class App extends Component {
