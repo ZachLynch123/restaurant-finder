@@ -10,7 +10,6 @@ const Restaurant = (props) => {
     
     // generates random number 0 - 10
     let x = Math.floor(Math.random() * props.data.length);
-    console.log();
 
     return (
         <div className="restaurant-card">
@@ -24,7 +23,6 @@ const Restaurant = (props) => {
             <CardLink href="#">Card Link</CardLink>
             <CardLink href="#">Another Link</CardLink>
           </CardBody>
-          <Button sm="2">Get a different restaurant</Button>
         </Card>
       </div>
     );
