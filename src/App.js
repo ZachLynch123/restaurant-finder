@@ -6,16 +6,21 @@ import { Col, Button } from 'reactstrap';
 class App extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       items: [],
       isLoaded: false,
       number: 0,
+      
     };
   }
   // api url https://developers.zomato.com/api/v2.1/search?count=3&lat=36.0144&lon=-115.1174&radius=75&sort=real_distance&order=asc
 
  
   componentDidMount() {
+    this.latitude = this.props.locate.latitude.toFixed(4);
+    this.longitude = this.props.locate.longitude.toFixed(4);
+
     this.api = '30b531a86dd28c712d12265fbd94fafa';
     this.header = {
       method: "GET",
@@ -25,7 +30,7 @@ class App extends Component {
       },
       credentails: "same-origin"
     }
-    fetch('https://developers.zomato.com/api/v2.1/search?count=10&lat=36.0144&lon=-115.1174&radius=75&sort=real_distance&order=asc', this.header)
+    fetch('https://developers.zomato.com/api/v2.1/search?count=20&lat=' + this.latitude + '&lon=' + this.longitude + '&radius=9000&sort=real_distance&order=asc', this.header)
     .then(result => result.json())
     .then(json => {
       this.setState({
@@ -50,7 +55,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-        <Col sm="12" id="tester">
+        <Col sm="8" id="tester">
         {/* change data to only pass 1 array to the restaurant, not multiple.
         Then refactor restaurant.js*/}
           <Restaurant data={items.restaurants}  />

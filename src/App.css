@@ -34,3 +34,12 @@
     transform: rotate(360deg);
   }
 }
+
+#tester {
+  margin: 0 auto;
+  float: none;
+}
+
+button {
+  box-shadow: 3px 3px 5px #2f3d41;
+}
