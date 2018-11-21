@@ -59,7 +59,7 @@ class App extends Component {
         {/* change data to only pass 1 array to the restaurant, not multiple.
         Then refactor restaurant.js*/}
           <Restaurant data={items.restaurants}  />
-          <Button onClick={this.onClickListener}>Get a different thing</Button>
+          <Button onClick={this.onClickListener}>Get a different restaurant</Button>
           {console.log(number)}
         </Col>
         </div>
