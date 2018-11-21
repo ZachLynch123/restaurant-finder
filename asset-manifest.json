@@ -1,15 +1,15 @@
 {
-  "main.css": "/restaurant/static/css/main.8b8d2798.chunk.css",
-  "main.js": "/restaurant/static/js/main.05d0b576.chunk.js",
-  "main.js.map": "/restaurant/static/js/main.05d0b576.chunk.js.map",
-  "static/css/1.919f2618.chunk.css": "/restaurant/static/css/1.919f2618.chunk.css",
-  "static/js/1.242a4523.chunk.js": "/restaurant/static/js/1.242a4523.chunk.js",
-  "static/js/1.242a4523.chunk.js.map": "/restaurant/static/js/1.242a4523.chunk.js.map",
-  "runtime~main.js": "/restaurant/static/js/runtime~main.288f027d.js",
-  "runtime~main.js.map": "/restaurant/static/js/runtime~main.288f027d.js.map",
-  "static/css/1.919f2618.chunk.css.map": "/restaurant/static/css/1.919f2618.chunk.css.map",
-  "static/css/main.8b8d2798.chunk.css.map": "/restaurant/static/css/main.8b8d2798.chunk.css.map",
-  "index.html": "/restaurant/index.html",
-  "precache-manifest.265da29692c9ac0156f9031b7a8e5c53.js": "/restaurant/precache-manifest.265da29692c9ac0156f9031b7a8e5c53.js",
-  "service-worker.js": "/restaurant/service-worker.js"
+  "main.css": "/restaurant-finder/static/css/main.96292fa5.chunk.css",
+  "main.js": "/restaurant-finder/static/js/main.fcb545ae.chunk.js",
+  "main.js.map": "/restaurant-finder/static/js/main.fcb545ae.chunk.js.map",
+  "static/css/1.5034cb8e.chunk.css": "/restaurant-finder/static/css/1.5034cb8e.chunk.css",
+  "static/js/1.e09dfc8c.chunk.js": "/restaurant-finder/static/js/1.e09dfc8c.chunk.js",
+  "static/js/1.e09dfc8c.chunk.js.map": "/restaurant-finder/static/js/1.e09dfc8c.chunk.js.map",
+  "runtime~main.js": "/restaurant-finder/static/js/runtime~main.639e416e.js",
+  "runtime~main.js.map": "/restaurant-finder/static/js/runtime~main.639e416e.js.map",
+  "static/css/main.96292fa5.chunk.css.map": "/restaurant-finder/static/css/main.96292fa5.chunk.css.map",
+  "static/css/1.5034cb8e.chunk.css.map": "/restaurant-finder/static/css/1.5034cb8e.chunk.css.map",
+  "index.html": "/restaurant-finder/index.html",
+  "precache-manifest.8f8ce3b87cef30bcb2a92099bbbb0a91.js": "/restaurant-finder/precache-manifest.8f8ce3b87cef30bcb2a92099bbbb0a91.js",
+  "service-worker.js": "/restaurant-finder/service-worker.js"
 }
