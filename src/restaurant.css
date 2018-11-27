@@ -3,10 +3,24 @@
     margin: 0 auto;
     margin-top: 30vh;
     box-shadow: 5px 5px 5px black;
-    background-color: #5c5858;
 }
 
-#card {
-    
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear;
 }
 
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms linear;
+}
+.fade-exit-done {
+    opacity: 0;
+}

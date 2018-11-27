@@ -45,7 +45,11 @@ class App extends Component {
 
 
   onClickListener = (event) => {
-    let x = Math.floor(Math.random() * 10);
+    let x = Math.floor(Math.random() * 20);
+    
+    if(this.state.number === x) {
+      x = Math.floor(Math.random() * 20);
+    }
     
     this.setState(state => ({
       number: x,
@@ -55,6 +59,7 @@ class App extends Component {
   render() {
     const { isLoaded, items, number } = this.state;
     if (isLoaded){
+      console.log(items);
     return (
       <div className="App">
       <CSSTransition
