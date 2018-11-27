@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Loader from "react-loader-spinner";
+import { CSSTransition } from 'react-transition-group';
 import Restaurant from './Restaurant';
 import { Col, Button, Row } from 'reactstrap';
 
@@ -36,7 +38,8 @@ class App extends Component {
       this.setState({
         isLoaded: true,
         items: json,
-      })
+        number: 1
+      });
     } );
   }
 
@@ -54,20 +57,32 @@ class App extends Component {
     if (isLoaded){
     return (
       <div className="App">
+      <CSSTransition
+            in={isLoaded}
+            appear={true}
+            timeout={900}
+            classNames="fade"
+            >
         <div className="container-fluid">
         <img className="bg"></img>
-        <div class="row text-center" >
-          <div className="col col-centered">
-            <Restaurant data={items.restaurants}  />
-            <Button onClick={this.onClickListener}>Get a different restaurant</Button>
-            {console.log(number)}
+        <div className="row text-center justify-content-md-center" >
+          <div className="col-xs-12 col-sm-6 col-md-4 col-centered">
+              <Restaurant data={items.restaurants} number={number}  />
+              <Button onClick={this.onClickListener}>Get a different restaurant</Button>
             </div>
+
           </div>
         </div>
+        </CSSTransition>
       </div>
     );} else {
       return (
-        <div>Didn't load</div>
+        <Loader
+                  type="Puff"
+                  color="#191970"
+                  height="100"
+                  width="100"
+                />
       );
     }
   }

@@ -51,9 +51,18 @@
   
 }
 
-
-
 .btn {
   box-shadow: 3px 3px 5px #2f3d41;
   padding-bottom: 70px;
+}
+
+/*appear - on page load */
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 900ms linear;
 }
