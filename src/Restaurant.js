@@ -45,7 +45,7 @@ const Restaurant = (props) => {
 
     return (
         <div className="restaurant-card">
-        <Card className="shadow-lg p-3 mb-5 bg-white rounded" >
+        <Card className="shadow-lg p-3 mb-5 bg-white rounded" id="card" >
           <CardBody id="card-body">
             <CardTitle>{props.data[x].restaurant.name}</CardTitle>
             <CardSubtitle>{props.data[x].restaurant.cuisines}</CardSubtitle>

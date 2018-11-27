@@ -1,8 +1,12 @@
 .restaurant-card {
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 30vh;
     box-shadow: 5px 5px 5px #2f3d41;
-    background-color: #5c5858
+    background-color: #5c5858;
 }
 
-.card-body {
+#card {
     
 }
+

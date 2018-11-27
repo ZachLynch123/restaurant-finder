@@ -1,4 +1,5 @@
 import React from 'react';
+import Loader from 'react-loader-spinner';
 import App from './App';
 import { geolocated } from 'react-geolocated';
 
@@ -11,7 +12,12 @@ class Location extends React.Component {
             ? <div>Geolocation is not enabled</div>
             : this.props.coords
               ? <App locate={this.props.coords} />
-              : <div>Getting the location data&hellip; </div>;
+              : <Loader
+                  type="Puff"
+                  color="#191970"
+                  height="100"
+                  width="100"
+                />;
       }
 }
 

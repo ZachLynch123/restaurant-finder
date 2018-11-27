@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Restaurant from './Restaurant';
-import { Col, Button } from 'reactstrap';
+import { Col, Button, Row } from 'reactstrap';
 
 class App extends Component {
   constructor(props) {
@@ -54,14 +54,15 @@ class App extends Component {
     if (isLoaded){
     return (
       <div className="App">
-        <div className="container">
-        <Col sm="8" id="tester">
-        {/* change data to only pass 1 array to the restaurant, not multiple.
-        Then refactor restaurant.js*/}
-          <Restaurant data={items.restaurants}  />
-          <Button onClick={this.onClickListener}>Get a different restaurant</Button>
-          {console.log(number)}
-        </Col>
+        <div className="container-fluid">
+        <img className="bg"></img>
+        <div class="row text-center" >
+          <div className="col col-centered">
+            <Restaurant data={items.restaurants}  />
+            <Button onClick={this.onClickListener}>Get a different restaurant</Button>
+            {console.log(number)}
+            </div>
+          </div>
         </div>
       </div>
     );} else {
