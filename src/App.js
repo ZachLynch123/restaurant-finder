@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Loader from "react-loader-spinner";
-import { CSSTransition } from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Restaurant from './Restaurant';
 import { Col, Button, Row } from 'reactstrap';
 
@@ -72,7 +72,9 @@ class App extends Component {
         <img className="bg"></img>
         <div className="row text-center justify-content-md-center" >
           <div className="col-xs-12 col-sm-6 col-md-4 col-centered">
-              <Restaurant data={items.restaurants} number={number}  />
+            <div className="restaurant-card">
+                <Restaurant data={items.restaurants} number={number}  />
+            </div>
               <Button onClick={this.onClickListener}>Get a different restaurant</Button>
             </div>
 
@@ -82,12 +84,16 @@ class App extends Component {
       </div>
     );} else {
       return (
-        <Loader
-                  type="Puff"
-                  color="#191970"
-                  height="100"
-                  width="100"
-                />
+        <div className="load-container">
+          <div className="load-wrapper">
+            <Loader
+                      type="Puff"
+                      color="#191970"
+                      height="100"
+                      width="100"
+                    />
+          </div>
+        </div>
       );
     }
   }

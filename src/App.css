@@ -12,6 +12,18 @@
   height: 40vmin;
 }
 
+.load-container {
+  width: 100%;
+  height: 100%;
+}
+
+.load-wrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 50vh;
+}
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -30,7 +42,7 @@
   max-width: 100%;
   height: 100vh;
   background-color: transparent;
-  z-index: 99999;
+  z-index: 1;
 }
 .bg {
     position: fixed;
@@ -51,6 +63,13 @@
   
 }
 
+.restaurant-card {
+  max-width: 75%;
+  margin: 0 auto;
+  margin-top: 30vh;
+  box-shadow: 5px 5px 5px black;
+}
+
 .btn {
   box-shadow: 3px 3px 5px #2f3d41;
   padding-bottom: 70px;
@@ -65,4 +84,26 @@
 .fade-appear.fade-appear-active {
   opacity: 1;
   transition: opacity 900ms linear;
+}
+
+/* enter */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 50900ms linear 50000ms;
+}
+
+/* exit */
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 50000ms linear;
+}
+.fade-exit-done {
+  opacity: 0;
 }

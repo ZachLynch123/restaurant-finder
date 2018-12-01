@@ -1,8 +1,6 @@
 import React from 'react';
 import { Card, CardText, CardBody,
     CardTitle, CardSubtitle } from 'reactstrap';
-import './restaurant.css';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 
 
@@ -43,8 +41,6 @@ const Restaurant = (props) => {
   
 
     return (
-        <TransitionGroup className="restaurant-card">
-          <CSSTransition key={number} timeout={3900} classNames="fade">
             <Card className="shadow-lg p-3 mb-5 bg-white rounded" id="card">
               <CardBody id="card-body">
                 <CardTitle>{props.data[number].restaurant.name}</CardTitle>
@@ -56,8 +52,7 @@ const Restaurant = (props) => {
                 <CardText>{price}</CardText>
               </CardBody>
             </Card>
-        </CSSTransition>
-      </TransitionGroup>
+
     );
 } 
 
