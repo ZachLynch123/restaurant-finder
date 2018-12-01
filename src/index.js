@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import Location from './Location';
+import Location from './components/Location';
 
 ReactDOM.render(<Location />, document.getElementById('root'));
 

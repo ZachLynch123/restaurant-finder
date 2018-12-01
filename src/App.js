@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Loader from "react-loader-spinner";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import Restaurant from './Restaurant';
+import Restaurant from './components/Restaurant';
 import { Col, Button, Row } from 'reactstrap';
 
 class App extends Component {

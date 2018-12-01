@@ -1,6 +1,6 @@
 import React from 'react';
 import Loader from 'react-loader-spinner';
-import App from './App';
+import App from '../App';
 import { geolocated } from 'react-geolocated';
 
 
