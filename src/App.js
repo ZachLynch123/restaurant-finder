@@ -85,14 +85,16 @@ class App extends Component {
     );} else {
       return (
         <div className="load-container">
-          <div className="load-wrapper">
+          <div className="row text-center" id="row">
+          <div className="col-12">
             <Loader
                       type="Puff"
                       color="#191970"
                       height="100"
                       width="100"
                     />
-          </div>
+                    </div>
+                    </div>
         </div>
       );
     }
